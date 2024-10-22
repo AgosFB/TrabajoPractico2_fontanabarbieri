@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Mulish",serif;
+    color: darkblue;
+    font-weight: 900;
+}
+
+p {
+    font-family: Roboto, serif;
+    color:darkblue;
+    font-weight: 400px;
+}
+
+h1 span{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3,p{
+    font-size: 20;
+}
+
+h3:hover{
+    font-style: italic;
+}
+
+h1 span {
+    line-height: 70px;
+}
+
+h2{
+    line-height: 50px;
+}
+
+p{
+    line-height: 25px;
+}
+
+h3{
+    line-height: 45px;
+}
+
+main, header {
+    width: 83.33%;
+   
+}
+
+main > section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main > div {
+    display: flex;
+    justify-content:end;
+}
+
+main img {
+    border-style:double;
+    border-color: coral;
+    margin: 0 auto;
+    
+}
+
+[src="imagenes/pulseras.jpg"],
+[src="imagenes/aritos.jpg"],
+[src="imagenes/anillos.jpg"],
+[src="imagenes/5.jpg"],
+[src="imagenes/6.jpg"],
+[src="imagenes/7.jpg"]  {
+    width: 30%;
+    display: block;
+    transition: all 3s 1s linear;
+    border-radius: 50px;
+
+}
+
+[src="imagenes/pulseras.jpg"]:hover {
+    filter: grayscale(100%);
+}
+
+[src="imagenes/aritos.jpg"]:hover {
+    filter: grayscale(100%);
+}
+
+[src="imagenes/anillos.jpg"]:hover {
+    filter: grayscale(100%);    
+}
+
+[src="imagenes/5.jpg"]:hover {
+    filter: grayscale(100%);    
+}
+
+[src="imagenes/6.jpg"]:hover {
+    filter: grayscale(100%);    
+}
+
+[src="imagenes/7.jpg"]:hover {
+    filter: grayscale(100%);    
+}
+
+[src="imagenes/4.jpg"]{
+    width: 30%;
+    display: block;
+    transition: all 3s 1s linear;
+    border-radius: 60px;
+    line-height: 60px;
+}
+
+[src="imagenes/4.jpg"]:hover {
+    filter: grayscale(100%);    
+}
+
+
+/*comienza regla media*/
+
+@media(max-width:768px) {
+
+  
+    div {
+        width: 30%;
+        margin-bottom: 40px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    * {
+        line-height: 40px !important;
+    }
+
+    section {
+
+    flex-direction:unset;
+    /*cambia de encolumnar los elementos
+    a apilarlos*/
+
+    }
+}
+
+
+
+
